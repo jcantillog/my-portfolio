@@ -1,3 +1,38 @@
 .sidebar-avatar-wrapper {
   padding: 20px;
 }
+
+.current-tech {
+  text-align: center;
+  
+  .current-tech-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .current-tech-logo {
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .current-tech-logo {
+      animation: current-tech-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes current-tech-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .current-tech-link {
+    color: #61dafb;
+  }
+}
