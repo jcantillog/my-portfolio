@@ -23,6 +23,7 @@ function UISidebar() {
 
   return (
     <Sider
+      style={{ zIndex: 1 }}
       width={300}
       collapsible
       collapsed={collapsed}
