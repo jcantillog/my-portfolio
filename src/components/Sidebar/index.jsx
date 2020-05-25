@@ -3,7 +3,7 @@ import menuConfig from "./menu.config";
 /* Antd */
 import { Layout, Menu, Avatar, Row } from "antd";
 /* Assets */
-import reactLogo from "../../../assets/react.svg";
+import reactLogo from "../../assets/react.svg";
 
 /* Styles */
 if (typeof window === "object") {
@@ -18,7 +18,9 @@ function UISidebar() {
   const [importedIcons, setImportedIcons] = useState(null);
 
   useEffect(() => {
-    import("@ant-design/icons").then(antdIcons => setImportedIcons(antdIcons));
+    import("@ant-design/icons").then((antdIcons) =>
+      setImportedIcons(antdIcons)
+    );
   }, []);
 
   return (
@@ -27,7 +29,7 @@ function UISidebar() {
       width={300}
       collapsible
       collapsed={collapsed}
-      onCollapse={collapsed => setCollapsed(collapsed)}
+      onCollapse={(collapsed) => setCollapsed(collapsed)}
     >
       <Row
         className="sidebar-avatar-wrapper"
@@ -38,7 +40,7 @@ function UISidebar() {
         <Avatar
           style={{ backgroundColor: "#1890ff" }}
           size={collapsed ? 40 : 200}
-          src="https://avatars0.githubusercontent.com/u/22524458?s=460&v=4"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQHPSoi18nuoHQ/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=4BALci7OCHMRDiGRLbvIIgh3lH0XtuahV4ZG6rn0LHM"
         />
       </Row>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={["0"]}>
@@ -57,7 +59,7 @@ function UISidebar() {
           <img
             src={reactLogo}
             className="current-tech-logo"
-            style={{ height: collapsed ? 50 : 100 }}
+            style={{ height: collapsed ? 50 : 80 }}
             alt="Current tech"
           />
           {!collapsed && (

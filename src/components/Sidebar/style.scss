@@ -4,13 +4,17 @@
 
 .current-tech {
   text-align: center;
-  
+
   .current-tech-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 
   .current-tech-logo {
@@ -22,7 +26,7 @@
       animation: current-tech-logo-spin infinite 20s linear;
     }
   }
-  
+
   @keyframes current-tech-logo-spin {
     from {
       transform: rotate(0deg);
@@ -31,8 +35,15 @@
       transform: rotate(360deg);
     }
   }
-  
+
   .current-tech-link {
     color: #61dafb;
   }
+}
+
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
