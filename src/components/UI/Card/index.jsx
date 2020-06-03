@@ -34,7 +34,7 @@ function Card({
       <Skeleton loading={loading} avatar active>
         <AntCard.Meta
           avatar={<Avatar src={withMeta.avatar} />}
-          title={`@ ${withMeta.title}`}
+          title={`${withMeta.title}`}
           description={withMeta.description || description}
         />
       </Skeleton>

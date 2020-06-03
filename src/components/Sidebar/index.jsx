@@ -14,7 +14,7 @@ const { Sider } = Layout;
 const menu = menuConfig();
 
 function UISidebar() {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [importedIcons, setImportedIcons] = useState(null);
 
   useEffect(() => {

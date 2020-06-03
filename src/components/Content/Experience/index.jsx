@@ -23,7 +23,7 @@ function Experience() {
           >
             <Card
               withMeta={{
-                title: workplace.institution,
+                title: `@ ${workplace.institution}`,
                 description: "",
                 avatar: workplace.avatar,
               }}
